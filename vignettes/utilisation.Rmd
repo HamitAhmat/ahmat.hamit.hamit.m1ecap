@@ -1,0 +1,40 @@
+---
+title: "Introduction au package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction au package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+```{r setup}
+library(ahmat.hamit.hamit.m1ecap)
+```
+
+## Presentation
+
+Ce package permet d'analyser la consommation energetique annuelle
+(gaz et electricite) par region, secteur et annee.
+
+## Filtrer les donnees
+
+```{r}
+bzh_gaz <- filtrer_conso(region_choisie = "Bretagne", filiere_choisie = "Gaz")
+head(bzh_gaz)
+```
+
+## Calcul groupe
+
+```{r}
+conso_par_groupe(var_groupe = "secteur")
+```
+
+## Graphique
+
+```{r, fig.width=7, fig.height=4}
+graph_conso(var_groupe = "region", titre = "Consommation totale par region")
+```
