@@ -1,0 +1,24 @@
+Package: ahmat.hamit.hamit.m1ecap
+Title: Analyse de la Consommation Energetique par Region
+Version: 0.0.0.9000
+Authors@R: 
+    person("Ahmat", "Hamit Hamit", email = "hamitahmat75@gmail.com", role = c("aut", "cre"))
+Description: Package d'analyse de la consommation annuelle d'electricite et
+    de gaz par region, secteur et annee, a partir des donnees de l'Agence ORE
+    publiees sur data.gouv.fr.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+LazyData: true
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    ggplot2,
+    rlang
+Suggests: 
+    testthat (>= 3.0.0),
+    covr,
+    R.rsp
+Config/testthat/edition: 3
+VignetteBuilder: R.rsp
