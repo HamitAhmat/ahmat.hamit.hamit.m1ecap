@@ -1,26 +1,25 @@
-
 # ahmat.hamit.hamit.m1ecap
 
-<!-- badges: start -->
-<!-- badges: end -->
+Package d’analyse de la consommation annuelle d’électricité et de gaz
+par région, secteur et année. Données issues de l’Agence ORE, publiées
+sur data.gouv.fr sous Licence Ouverte v2.0.
 
-The goal of ahmat.hamit.hamit.m1ecap is to ...
+## Informations
 
-## Installation
+Le premier commit de ce répertoire a été effectué le 16/04/2026 à 08h09 (UTC).
 
-You can install the development version of ahmat.hamit.hamit.m1ecap from [GitHub](https://github.com/) with:
+## Exercice Git
 
-``` r
-# install.packages("pak")
-pak::pak("HamitAhmat/ahmat.hamit.hamit.m1ecap")
-```
+Suite des commandes `git` à exécuter (hors `git add`) pour obtenir
+l’historique demandé :
 
-## Example
+```bash
+git checkout master
+git commit -m "commit A"
 
-This is a basic example which shows you how to solve a common problem:
+git checkout -b feature
+git commit -m "commit B"
+git commit -m "commit C"
 
-``` r
-library(ahmat.hamit.hamit.m1ecap)
-## basic example code
-```
-
+git checkout master
+git merge --no-ff feature -m "commit D"
